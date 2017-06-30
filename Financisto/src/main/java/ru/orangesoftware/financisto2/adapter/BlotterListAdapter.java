@@ -71,7 +71,7 @@ public class BlotterListAdapter extends ResourceCursorAdapter {
     @DrawableRes(R.drawable.ic_action_share)
     public Drawable icBlotterSplit;
 
-    @DimensionPixelSizeRes(R.dimen.transaction_icon_padding)
+    @DimensionPixelSizeRes(R.dimen.entry_padding)
     public int topPadding;
 
     private final int colors[];

@@ -33,10 +33,8 @@ import ru.orangesoftware.financisto2.R;
  */
 public class QuickAction {
 
-    public Drawable mDrawable;
-    public CharSequence mTitle;
-
-    /* package */WeakReference<View> mView;
+    Drawable mDrawable;
+    CharSequence mTitle;
 
     public QuickAction(Context ctx, int drawableId, int titleId) {
         mDrawable = prepareDrawable(ctx, ctx.getResources().getDrawable(drawableId));
@@ -44,7 +42,7 @@ public class QuickAction {
     }
 
     private Drawable prepareDrawable(Context ctx, Drawable drawable) {
-        int color = ctx.getResources().getColor(R.color.holo_blue_dark);
+        int color = ctx.getResources().getColor(R.color.primary_dark);
         drawable.mutate().setColorFilter(color, PorterDuff.Mode.SRC_ATOP);
         return drawable;
     }

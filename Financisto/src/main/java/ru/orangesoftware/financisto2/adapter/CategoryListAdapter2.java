@@ -62,7 +62,7 @@ public class CategoryListAdapter2 extends BaseAdapter {
 		this.collapsedDrawable = resources.getDrawable(R.drawable.ic_action_collapsed);
         this.incomeColor = resources.getColor(R.color.category_type_income);
         this.expenseColor = resources.getColor(R.color.category_type_expense);
-        this.levelPadding = resources.getDimensionPixelSize(R.dimen.category_padding);
+        this.levelPadding = resources.getDimensionPixelSize(R.dimen.entry_padding);
 		recreatePlainList();
 	}
 	

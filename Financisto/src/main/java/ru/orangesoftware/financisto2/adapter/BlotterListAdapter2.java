@@ -26,9 +26,6 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import org.androidannotations.annotations.res.DimensionPixelSizeRes;
-import org.androidannotations.annotations.res.DrawableRes;
-
 import java.util.Date;
 
 import ru.orangesoftware.financisto2.R;
@@ -88,7 +85,7 @@ public class BlotterListAdapter2 extends CursorRecyclerViewAdapter<BlotterListAd
         this.icBlotterExpense = context.getDrawable(R.drawable.ic_action_arrow_right_top);
         this.icBlotterTransfer = context.getDrawable(R.drawable.ic_action_arrow_top_down);
         this.icBlotterSplit = context.getDrawable(R.drawable.ic_action_share);
-        this.topPadding = r.getDimensionPixelSize(R.dimen.transaction_icon_padding);
+        this.topPadding = r.getDimensionPixelSize(R.dimen.entry_padding);
     }
 
     @Override

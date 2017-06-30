@@ -11,7 +11,13 @@
 <resources>
 
     <style name="Theme.Financisto" parent="android:Theme.Holo.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/Theme.Financisto.ActionBarStyle</item>
+    </style>
 
+    <style name="Theme.Financisto.ActionBarStyle" parent="android:Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <!--<item name="android:background">@color/primary_dark</item>-->
+        <!--<item name="android:backgroundStacked">@color/primary_light</item>-->
+        <item name="android:backgroundSplit">@color/primary</item>
     </style>
 
     <style name="CupcakeDialog" parent="android:Theme.Dialog">

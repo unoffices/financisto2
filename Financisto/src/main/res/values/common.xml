@@ -22,6 +22,8 @@
 	<dimen name="select_entry_height_no_label">46dp</dimen>
 	<dimen name="title_entry_height">25dp</dimen>
 	<dimen name="amount_picker_width">47dp</dimen>
+	<dimen name="entry_padding">10dp</dimen>
+
     <!-- Minimum height used with @drawable/list_section_divider_holo_custom.
      Right now the drawable has implicit 32dip minimal height, which is confusing.
      This value is for making the hidden configuration explicit in xml. -->
@@ -147,8 +149,6 @@
 	<string name="card_issuer_discover">Discover</string>	
 	<string name="card_issuer_nets">NETS</string>	
 	<string name="recur_rrule">RFC-2445 RRULE</string>
-	<dimen name="category_padding">10dp</dimen>
-    <dimen name="transaction_icon_padding">10dp</dimen>
 
     <string-array name="lock_time_values">
         <item>0</item>

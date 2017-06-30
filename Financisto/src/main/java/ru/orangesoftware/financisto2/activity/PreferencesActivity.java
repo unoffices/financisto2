@@ -26,7 +26,6 @@ import android.support.v4.app.NavUtils;
 import android.util.Log;
 import android.widget.Toast;
 
-import com.google.android.gms.auth.GoogleAuthUtil;
 import com.google.android.gms.common.AccountPicker;
 
 import org.androidannotations.annotations.EActivity;
@@ -42,8 +41,6 @@ import ru.orangesoftware.financisto2.utils.PinProtection;
 
 @EActivity
 public class PreferencesActivity extends PreferenceActivity {
-
-    private static final String[] ACCOUNT_TYPE = new String[] {GoogleAuthUtil.GOOGLE_ACCOUNT_TYPE};
 
     private static final int SELECT_DATABASE_FOLDER = 100;
     private static final int CHOOSE_ACCOUNT = 101;
@@ -143,7 +140,7 @@ public class PreferencesActivity extends PreferenceActivity {
     private void chooseAccount() {
         try {
             Account selectedAccount = getSelectedAccount();
-            Intent intent = AccountPicker.newChooseAccountIntent(selectedAccount, null, ACCOUNT_TYPE, true,
+            Intent intent = AccountPicker.newChooseAccountIntent(selectedAccount, null, new String[]{"com.google"}, true,
                     null, null, null, null);
             startActivityForResult(intent, CHOOSE_ACCOUNT);
         } catch (ActivityNotFoundException e) {

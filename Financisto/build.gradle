@@ -7,8 +7,8 @@ repositories {
 }
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion '23.0.2'
+    compileSdkVersion 25
+    buildToolsVersion '25.0.2'
 
 //    compileOptions {
 //        sourceCompatibility JavaVersion.VERSION_1_7
@@ -17,7 +17,7 @@ android {
 
     defaultConfig {
         minSdkVersion 21
-        targetSdkVersion 23
+        targetSdkVersion 25
         versionCode 200
         versionName "2.0.0"
         multiDexEnabled true
@@ -47,43 +47,41 @@ android {
 
 }
 
-def googlePlayVersion = '6.5.87'
-
 dependencies {
 
-    compile 'com.android.support:appcompat-v7:23.1.1'
-    compile 'com.android.support:design:23.1.1'
-    compile 'com.android.support:cardview-v7:23.1.1'
-    compile 'com.android.support:recyclerview-v7:23.1.1'
+    compile 'com.android.support:appcompat-v7:25.2.0'
+    compile 'com.android.support:design:25.2.0'
+    compile 'com.android.support:cardview-v7:25.2.0'
+    compile 'com.android.support:recyclerview-v7:25.2.0'
     compile 'com.android.support:multidex:1.0.1'
 
-    //compile 'com.android.support:support-v4:21.0.3'
-    //compile 'com.android.support:cardview-v7:21.0.3'
-    //compile 'com.android.support:recyclerview-v7:21.0.3'
-    compile 'com.google.code.gson:gson:2.4'
-    compile "com.google.android.gms:play-services-base:$googlePlayVersion"
+    compile 'com.google.code.gson:gson:2.7'
+    compile "com.google.android.gms:play-services-base:10.2.1"
     //compile "com.google.android.gms:play-services-ads:$googlePlayVersion"
     //compile "com.google.android.gms:play-services-appindexing:$googlePlayVersion"
     //compile "com.google.android.gms:play-services-maps:$googlePlayVersion"
     //compile "com.google.android.gms:play-services-location:$googlePlayVersion"
     //compile "com.google.android.gms:play-services-fitness:$googlePlayVersion"
     //compile "com.google.android.gms:play-services-panorama:$googlePlayVersion"
-    compile "com.google.android.gms:play-services-drive:$googlePlayVersion"
+    compile "com.google.android.gms:play-services-drive:10.2.1"
     //compile "com.google.android.gms:play-services-games:$googlePlayVersion"
     //compile "com.google.android.gms:play-services-wallet:$googlePlayVersion"
     //compile "com.google.android.gms:play-services-identity:$googlePlayVersion"
     //compile "com.google.android.gms:play-services-cast:$googlePlayVersion"
-    compile "com.google.android.gms:play-services-plus:$googlePlayVersion"
+    compile "com.google.android.gms:play-services-plus:10.2.1"
     //compile "com.google.android.gms:play-services-appstate:$googlePlayVersion"
     //compile "com.google.android.gms:play-services-wearable:$googlePlayVersion"
     //compile "com.google.android.gms:play-services-all-wear:$googlePlayVersion"
+
     apt "org.androidannotations:androidannotations:3.3.2"
     compile 'org.androidannotations:androidannotations-api:3.3.2'
+
     compile 'com.commonsware.cwac:wakeful:1.0.5'
     compile 'net.sf.trove4j:trove4j:3.0.3'
     compile 'de.greenrobot:eventbus:2.4.0'
     compile 'com.squareup.okhttp3:okhttp:3.0.0-RC1'
-    compile 'com.google.guava:guava:19.0'
+    compile 'com.google.guava:guava:20.0'
+
     compile fileTree(include: ['**/*.jar'], dir: 'libs')
 }
 

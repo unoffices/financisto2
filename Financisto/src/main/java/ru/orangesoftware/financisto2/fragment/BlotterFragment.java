@@ -120,7 +120,7 @@ public class BlotterFragment extends AbstractFragment implements QuickActionWidg
         if (filterMenuItem != null) {
             Drawable drawable = getResources().getDrawable(R.drawable.actionbar_filter);
             if (!blotterFilter.isEmpty()) {
-                drawable.mutate().setColorFilter(getResources().getColor(R.color.holo_blue_light), PorterDuff.Mode.SRC_ATOP);
+                drawable.mutate().setColorFilter(getResources().getColor(R.color.accent), PorterDuff.Mode.SRC_ATOP);
             }
             filterMenuItem.setIcon(drawable);
         }

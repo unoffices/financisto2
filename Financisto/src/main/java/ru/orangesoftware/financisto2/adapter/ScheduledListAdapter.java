@@ -197,7 +197,7 @@ public class ScheduledListAdapter extends BaseAdapter {
 
         private static void removeRightCenterView(View view, Holder v) {
             view.findViewById(R.id.right_center).setVisibility(View.GONE);
-            int topPadding = v.iconView.getResources().getDimensionPixelSize(R.dimen.transaction_icon_padding);
+            int topPadding = v.iconView.getResources().getDimensionPixelSize(R.dimen.entry_padding);
             v.iconView.setPadding(0, topPadding, 0, 0);
         }
 

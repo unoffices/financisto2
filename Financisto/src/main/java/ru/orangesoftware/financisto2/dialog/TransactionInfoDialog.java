@@ -21,7 +21,6 @@ import android.view.View.OnClickListener;
 import android.widget.*;
 import ru.orangesoftware.financisto2.R;
 import ru.orangesoftware.financisto2.activity.BlotterActivity;
-import ru.orangesoftware.financisto2.activity.BlotterOperations;
 import ru.orangesoftware.financisto2.db.CategoryRepository;
 import ru.orangesoftware.financisto2.db.CategoryRepository_;
 import ru.orangesoftware.financisto2.db.DatabaseAdapter;
@@ -53,7 +52,7 @@ public class TransactionInfoDialog {
         this.db = db;
         this.inflater = inflater;
         this.layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        this.splitPadding = context.getResources().getDimensionPixelSize(R.dimen.transaction_icon_padding);
+        this.splitPadding = context.getResources().getDimensionPixelSize(R.dimen.entry_padding);
         this.u = new Utils(context);
         this.categoryRepository = CategoryRepository_.getInstance_(context);
     }
